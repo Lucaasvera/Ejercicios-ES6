@@ -40,3 +40,5 @@ const PI = freezeObj();
 //Ejercicio 4 Usa funciones flecha para escribir funciones anónimas de manera breve
 
 let magic = () => new Date();
+
+//Ejercicio 5
