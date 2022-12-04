@@ -41,4 +41,14 @@ const PI = freezeObj();
 
 let magic = () => new Date();
 
-//Ejercicio 5
+//Ejercicio 5 Escribe funciones flecha con parámetros
+const myConcat = (arr1, arr2) => {
+  return arr1.concat(arr2);
+};
+
+console.log(myConcat([1, 2], [3, 4, 5]));
+
+//Ejercicio 6 Establece parámetros por defecto para tus funciones
+const increment = (number, value = 1) => number + value;
+
+//Ejercicio 7 Utiliza el parámetro rest con parámetros de función
