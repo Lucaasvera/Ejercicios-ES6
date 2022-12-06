@@ -57,3 +57,40 @@ const sum = (...args) => {
 };
 
 //Ejercicio 8 Utiliza el operador de propagación para evaluar los arreglos en el lugar
+const arr1 = ["JAN", "FEB", "MAR", "APR", "MAY"];
+let arr2;
+
+arr2 = [...arr1];
+
+console.log(arr2);
+
+//Ejercicio 9 Usa sintaxis de desestructuración para extraer valores de objetos
+const HIGH_TEMPERATURES = {
+  yesterday: 75,
+  today: 77,
+  tomorrow: 80,
+};
+
+const { today, tomorrow } = HIGH_TEMPERATURES;
+
+//Ejercicio 10 Usa sintaxis de desestructuración para asignar variables desde objetos
+const HIGH_TEMPERATURES1 = {
+  yesterday: 75,
+  today: 77,
+  tomorrow: 80,
+};
+
+const { today: highToday, tomorrow: highTomorrow } = HIGH_TEMPERATURES1;
+
+//Ejercicio 11 Usa sintaxis de desestructuración para asignar variables desde objetos anidados
+const LOCAL_FORECAST = {
+  yesterday: { low: 61, high: 75 },
+  today: { low: 64, high: 77 },
+  tomorrow: { low: 68, high: 80 },
+};
+
+const {
+  today: { low: lowToday, high: highToday1 },
+} = LOCAL_FORECAST;
+
+//Ejercicio 12 Usa sintaxis de desestructuración para asignar variables desde arreglos
